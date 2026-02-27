@@ -9,5 +9,5 @@ jobs:
    steps:
    - name: Running single command in Job1
      run: echo "Hi, this is my first github workflow"
-   - name: Checking os relase for GitHub Hosted Runner
-   run : cat /etc/os-release
+   - name: Checking OS Release for GitHub Hosted Runner
+     run : cat /etc/os-release
