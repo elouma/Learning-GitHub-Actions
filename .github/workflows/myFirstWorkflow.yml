@@ -46,11 +46,12 @@ jobs:
            ./myartifact.txt/
            artifacts/
            !**/hostname.txt
+ 
  job2:
    name: JOB2
    runs-on: ubuntu-latest
    steps:
-   - name: Checking current directory
+   - name: checking current directory
      run: |
        pwd
        ls -ltr
