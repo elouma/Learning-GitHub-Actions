@@ -74,11 +74,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
        - name: Referring Environment Variables
-         run: 
-          echo "[INFO] Running Deployment on ${{ vars.HOST }} using ${{ vars.USER}}."."
+         run: echo "[INFO] Running Deployment on ${{ vars.HOST }} using ${{ vars.USER}}."
        - name: Referring Environment Secrets
-         run: 
-          echo "[INFO] Password for ${{ vars.USER }} is ${{ secrets.PASSWORD }}."."
+         run: echo "[INFO] Password for ${{ vars.USER }} is ${{ secrets.PASSWORD }}."
     environment:
       name: STAGING
  production:
@@ -86,11 +84,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
        - name: Referring Environment Variables
-         run: 
-          echo "[INFO] Running Deployment on ${{ vars.HOST }} using ${{ vars.USER}}."."
+         run: echo "[INFO] Running Deployment on ${{ vars.HOST }} using ${{ vars.USER}}."
        - name: Referring Environment Secrets
-         run: 
-          echo "[INFO] Password for ${{ vars.USER }} is ${{ secrets.PASSWORD }}."."
+         run: echo "[INFO] Password for ${{ vars.USER }} is ${{ secrets.PASSWORD }}."
     environment:
       name: PRODUCTION
       
